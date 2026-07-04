@@ -17,9 +17,9 @@ import { info, success, error } from "./ui/colors.js";
 const program = new Command();
 
 program
-  .name("skill-manager")
-  .alias("skm")
-  .description("CLI para instalar AI agent skills desde un repositorio local")
+  .name("knowledge-manager")
+  .alias("km")
+  .description("CLI para instalar AI agent skills desde un repositorio local de conocimiento")
   .version("1.0.0");
 
 program
@@ -52,7 +52,7 @@ program
       await searchCommand();
     } catch (e) {
       console.log(error(`Error: ${(e as Error).message}`));
-      console.log(info("Probá con 'skill-manager rescan' primero."));
+      console.log(info("Probá con 'knowledge-manager rescan' primero."));
     }
   });
 
@@ -72,7 +72,7 @@ program
       await searchCommand();
     } catch (e) {
       console.log(error(`Error: ${(e as Error).message}`));
-      console.log(info("Probá con 'skill-manager rescan' primero."));
+      console.log(info("Probá con 'knowledge-manager rescan' primero."));
     }
   });
 
@@ -194,7 +194,7 @@ program
       await searchCommand();
     } catch (e) {
       console.log(error(`Error: ${(e as Error).message}`));
-      console.log(info("Probá con 'skill-manager rescan' primero."));
+      console.log(info("Probá con 'knowledge-manager rescan' primero."));
     }
   } else {
     program.parse(process.argv);

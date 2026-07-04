@@ -6,7 +6,7 @@ import { info, success, highlight, warning } from "../ui/colors.js";
 export async function statusCommand(): Promise<void> {
   const config = loadConfig();
   if (!config) {
-    console.log(warning("No hay configuración. Ejecutá 'skill-manager init' primero."));
+    console.log(warning("No hay configuración. Ejecutá 'knowledge-manager init' primero."));
     return;
   }
 
@@ -24,7 +24,7 @@ export async function statusCommand(): Promise<void> {
   if (installed.length === 0) {
     showSummaryBox("Status", [
       info("No hay skills instalados en este proyecto."),
-      info("Usá 'skill-manager search' para buscar e instalar."),
+      info("Usá 'knowledge-manager search' para buscar e instalar."),
     ]);
     return;
   }

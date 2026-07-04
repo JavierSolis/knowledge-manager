@@ -15,7 +15,7 @@ export interface UpdateCommandOptions {
 export async function updateCommand(options: UpdateCommandOptions = {}): Promise<void> {
   const config = loadConfig();
   if (!config) {
-    console.log(warning("No hay configuración. Ejecutá 'skill-manager init' primero."));
+    console.log(warning("No hay configuración. Ejecutá 'knowledge-manager init' primero."));
     return;
   }
 

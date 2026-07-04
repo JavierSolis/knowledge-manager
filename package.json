@@ -1,19 +1,19 @@
 {
-  "name": "skill-manager",
+  "name": "knowledge-manager",
   "version": "1.0.0",
-  "description": "CLI para instalar AI agent skills desde un repositorio local",
+  "description": "CLI para instalar AI agent skills desde un repositorio local de conocimiento",
   "type": "module",
   "bin": {
-    "skill-manager": "./bin/skill-manager.js",
-    "skm": "./bin/skill-manager.js"
+    "knowledge-manager": "./bin/knowledge-manager.js",
+    "km": "./bin/knowledge-manager.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JavierSolis/skill-manager.git"
+    "url": "git+https://github.com/JavierSolis/knowledge-manager.git"
   },
-  "homepage": "https://github.com/JavierSolis/skill-manager#readme",
+  "homepage": "https://github.com/JavierSolis/knowledge-manager#readme",
   "bugs": {
-    "url": "https://github.com/JavierSolis/skill-manager/issues"
+    "url": "https://github.com/JavierSolis/knowledge-manager/issues"
   },
   "files": [
     "dist/",

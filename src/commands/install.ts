@@ -18,7 +18,7 @@ export async function installCommand(
 ): Promise<void> {
   const config = loadConfig();
   if (!config) {
-    console.log(errorColor("No hay configuración. Ejecutá 'skill-manager init' primero."));
+    console.log(errorColor("No hay configuración. Ejecutá 'knowledge-manager init' primero."));
     return;
   }
 

@@ -3,7 +3,7 @@ import { join } from "path";
 import type { SkillLock, LockEntry } from "../types/skill.js";
 
 function getLockPath(projectPath: string): string {
-  return join(projectPath, ".skm-lock.json");
+  return join(projectPath, ".km-lock.json");
 }
 
 export function loadLock(projectPath: string): SkillLock | null {

@@ -17,7 +17,7 @@ function fileHash(filePath: string): string {
 export async function conflictCommand(): Promise<void> {
   const config = loadConfig();
   if (!config) {
-    console.log(errColor("No hay configuración. Ejecutá 'skill-manager init' primero."));
+    console.log(errColor("No hay configuración. Ejecutá 'knowledge-manager init' primero."));
     return;
   }
 

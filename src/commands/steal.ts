@@ -41,7 +41,7 @@ function countFiles(dir: string): number {
 export async function stealCommand(): Promise<void> {
   const config = loadConfig();
   if (!config) {
-    console.log(errColor("No hay configuración. Ejecutá 'skill-manager init' primero."));
+    console.log(errColor("No hay configuración. Ejecutá 'knowledge-manager init' primero."));
     return;
   }
 

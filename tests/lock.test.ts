@@ -98,7 +98,7 @@ describe("lock manager", () => {
       hash: "abc", destination: "/d", mode: "local", installed_at: "2026-01-01T00:00:00Z",
     };
     writeLock(projectDir, [entry]);
-    const lockPath = join(projectDir, ".skm-lock.json");
+    const lockPath = join(projectDir, ".km-lock.json");
     expect(existsSync(lockPath)).toBe(true);
     const raw = readFileSync(lockPath, "utf-8");
     const parsed = JSON.parse(raw);

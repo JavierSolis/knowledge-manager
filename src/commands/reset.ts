@@ -5,11 +5,11 @@ import { confirmQuestion } from "../ui/prompts.js";
 import { showSummaryBox } from "../ui/display.js";
 import { info, success, warning } from "../ui/colors.js";
 
-const CONFIG_DIR = join(homedir(), ".config", "skill-manager");
+const CONFIG_DIR = join(homedir(), ".config", "knowledge-manager");
 
 export async function resetCommand(force = false): Promise<void> {
   if (!existsSync(CONFIG_DIR)) {
-    console.log(warning("No hay instalación de Skill Manager que resetear."));
+    console.log(warning("No hay instalación de Knowledge Manager que resetear."));
     return;
   }
 
@@ -34,6 +34,6 @@ export async function resetCommand(force = false): Promise<void> {
 
   showSummaryBox("Reset completado", [
     success("Configuración eliminada."),
-    info("Ejecutá 'skill-manager init' para configurar de nuevo."),
+    info("Ejecutá 'knowledge-manager init' para configurar de nuevo."),
   ]);
 }

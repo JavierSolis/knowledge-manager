@@ -2,9 +2,9 @@
 
 ---
 
-# Skill Manager
+# Knowledge Manager
 
-Tools like [autoskills](https://github.com/midudev/autoskills) use a centralized registry: you can't control versions, share skills with your team, or keep private skills. **Skill Manager** works like a package manager for skills — your Git repo is your registry. You version them, your team grows the catalog, and everyone installs from there. Public repo, private repo, or multiple sources. Like npm/pip but for AI skills.
+Tools like [autoskills](https://github.com/midudev/autoskills) use a centralized registry: you can't control versions, share skills with your team, or keep private skills. **Knowledge Manager** works like a package manager for skills — your Git repo is your registry. You version them, your team grows the catalog, and everyone installs from there. Public repo, private repo, or multiple sources. Like npm/pip but for AI skills.
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ There's a working example in [ejemplo-skills/](./ejemplo-skills) so you can see 
 ## Quick Start
 
 ```bash
-npx skill-manager
+npx knowledge-manager
 ```
 
 One command. First run auto-configures the repository and opens the interactive search. Subsequent runs go directly to searching and installing skills.
@@ -38,7 +38,7 @@ One command. First run auto-configures the repository and opens the interactive 
 You can also use the short alias:
 
 ```bash
-npx skm
+npx km
 ```
 
 ## How it works
@@ -62,19 +62,19 @@ npx skm
 ## Command reference
 
 ```bash
-npx skill-manager init          # Configure repo and AI client
-npx skill-manager search        # Search and install skills (TUI)
-npx skill-manager install       # Same as search (alias)
-npx skill-manager list          # List installed skills
-npx skill-manager update        # Update installed skills
-npx skill-manager rescan        # Re-scan repository
-npx skill-manager verify        # Verify integrity
-npx skill-manager repair        # Re-install corrupted skills
-npx skill-manager conflict      # Detect and resolve conflicts
-npx skill-manager steal         # Extract unregistered skills
-npx skill-manager status        # Show installation status
-npx skill-manager reset         # Reset all configuration
-npx skill-manager --help        # Show all commands
+npx knowledge-manager init          # Configure repo and AI client
+npx knowledge-manager search        # Search and install skills (TUI)
+npx knowledge-manager install       # Same as search (alias)
+npx knowledge-manager list          # List installed skills
+npx knowledge-manager update        # Update installed skills
+npx knowledge-manager rescan        # Re-scan repository
+npx knowledge-manager verify        # Verify integrity
+npx knowledge-manager repair        # Re-install corrupted skills
+npx knowledge-manager conflict      # Detect and resolve conflicts
+npx knowledge-manager steal         # Extract unregistered skills
+npx knowledge-manager status        # Show installation status
+npx knowledge-manager reset         # Reset all configuration
+npx knowledge-manager --help        # Show all commands
 ```
 
 ## License

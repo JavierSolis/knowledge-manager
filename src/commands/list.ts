@@ -13,7 +13,7 @@ export interface ListCommandOptions {
 export async function listCommand(options: ListCommandOptions = {}): Promise<void> {
   const config = loadConfig();
   if (!config) {
-    console.log(warning("No hay configuración. Ejecutá 'skill-manager init' primero."));
+    console.log(warning("No hay configuración. Ejecutá 'knowledge-manager init' primero."));
     return;
   }
 

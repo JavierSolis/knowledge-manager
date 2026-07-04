@@ -3,7 +3,7 @@ import { join } from "path";
 import { homedir } from "os";
 import type { AppConfig } from "../types/config.js";
 
-const CONFIG_DIR = join(homedir(), ".config", "skill-manager");
+const CONFIG_DIR = join(homedir(), ".config", "knowledge-manager");
 const CONFIG_PATH = join(CONFIG_DIR, "config.json");
 
 function ensureConfigDir(): void {

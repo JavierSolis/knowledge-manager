@@ -1,4 +1,4 @@
-# Skill Manager — Project Context
+# Knowledge Manager — Project Context
 
 ## Rol
 
@@ -6,7 +6,7 @@ Sos un **Senior Engineer** implementando un CLI tool en TypeScript/Node.js. Ten�
 
 ## Proyecto
 
-CLI interactivo (`skill-manager`) que instala AI agent skills desde un repositorio local hacia un proyecto. Similar a autoskills (midudev) pero con repo local + SQLite FTS5 + multi AI client.
+CLI interactivo (`knowledge-manager`) que instala AI agent skills desde un repositorio local hacia un proyecto. Similar a autoskills (midudev) pero con repo local + SQLite FTS5 + multi AI client.
 
 **Repo principal**: `/Users/javiersolisflores/Documents/proyectos/skill_manager/`
 **Plan completo**: `plan/` (10 documentos)
@@ -58,7 +58,7 @@ Los skills están en `.claude/skills/` y se cargan automáticamente según el co
 
 | Contexto | Skill |
 |----------|-------|
-| Scanner logic, search UI, prompts, install flow, init/rescan | `skill-manager-cli` |
+| Scanner logic, search UI, prompts, install flow, init/rescan | `knowledge-manager-cli` |
 
 ## Links Rápidos
 

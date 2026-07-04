@@ -6,7 +6,7 @@ import type { SearchResult, InstalledSkill } from "../types/skill.js";
 export function showHero(version: string = "1.0.0"): void {
   console.log(
     boxen(
-      `${bold("SKILL MANAGER")} ${dim(`v${version}`)}\n${dim("Instalá AI skills desde tu repositorio local")}`,
+      `${bold("KNOWLEDGE MANAGER")} ${dim(`v${version}`)}\n${dim("Instalá AI skills desde tu repositorio local")}`,
       {
         padding: { top: 0, bottom: 0, left: 2, right: 2 },
         margin: 0,
@@ -35,7 +35,7 @@ export interface DestAnalysis {
 
 export function showWelcomeBox(): void {
   const message = [
-    highlight("Bienvenido a Skill Manager!"),
+    highlight("Bienvenido a Knowledge Manager!"),
     "",
     "Esta herramienta instala AI skills",
     "desde tu repositorio local de skills.",

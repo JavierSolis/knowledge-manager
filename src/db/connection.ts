@@ -103,7 +103,7 @@ let db: SqlJsDatabase | null = null;
 let dbPath: string = "";
 
 function getDbPath(): string {
-  const configDir = join(homedir(), ".config", "skill-manager");
+  const configDir = join(homedir(), ".config", "knowledge-manager");
   if (!existsSync(configDir)) {
     mkdirSync(configDir, { recursive: true });
   }

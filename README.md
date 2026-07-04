@@ -2,9 +2,9 @@
 
 ---
 
-# Skill Manager
+# Knowledge Manager
 
-Herramientas como [autoskills](https://github.com/midudev/autoskills) usan un registry centralizado: no controlas versiones, no compartes skills con tu equipo, no tienes skills privadas. **Skill Manager** funciona como un gestor de paquetes para skills: tu repositorio Git es tu registry. Versionas, tu equipo alimenta el catálogo, y todos instalan desde ahí — sea un repo público, privado, o varios. Lo mismo que npm/pip pero con skills de IA.
+Herramientas como [autoskills](https://github.com/midudev/autoskills) usan un registry centralizado: no controlas versiones, no compartes skills con tu equipo, no tienes skills privadas. **Knowledge Manager** funciona como un gestor de paquetes para skills: tu repositorio Git es tu registry. Versionas, tu equipo alimenta el catálogo, y todos instalan desde ahí — sea un repo público, privado, o varios. Lo mismo que npm/pip pero con skills de IA.
 
 ## Prerrequisitos
 
@@ -30,7 +30,7 @@ Tienes un ejemplo funcional en [ejemplo-skills/](./ejemplo-skills) para ver la e
 ## Quick Start
 
 ```bash
-npx skill-manager
+npx knowledge-manager
 ```
 
 Un solo comando. Si es tu primera vez, configura el repositorio automáticamente y abre la búsqueda interactiva. Si ya lo usaste antes, va directo a buscar e instalar skills.
@@ -38,7 +38,7 @@ Un solo comando. Si es tu primera vez, configura el repositorio automáticamente
 También puedes usar el alias corto:
 
 ```bash
-npx skm
+npx km
 ```
 
 ## ¿Qué hace?
@@ -62,19 +62,19 @@ npx skm
 ## Referencia de comandos
 
 ```bash
-npx skill-manager init          # Configurar repositorio y AI client
-npx skill-manager search        # Buscar e instalar skills (TUI)
-npx skill-manager install       # Igual que search (alias)
-npx skill-manager list          # Listar skills instalados
-npx skill-manager update        # Actualizar skills instalados
-npx skill-manager rescan        # Re-escanear repositorio
-npx skill-manager verify        # Verificar integridad
-npx skill-manager repair        # Re-instalar skills corruptos
-npx skill-manager conflict      # Detectar y resolver conflictos
-npx skill-manager steal         # Extraer skills no registrados
-npx skill-manager status        # Mostrar estado de instalación
-npx skill-manager reset         # Resetear toda la configuración
-npx skill-manager --help        # Ver todos los comandos
+npx knowledge-manager init          # Configurar repositorio y AI client
+npx knowledge-manager search        # Buscar e instalar skills (TUI)
+npx knowledge-manager install       # Igual que search (alias)
+npx knowledge-manager list          # Listar skills instalados
+npx knowledge-manager update        # Actualizar skills instalados
+npx knowledge-manager rescan        # Re-escanear repositorio
+npx knowledge-manager verify        # Verificar integridad
+npx knowledge-manager repair        # Re-instalar skills corruptos
+npx knowledge-manager conflict      # Detectar y resolver conflictos
+npx knowledge-manager steal         # Extraer skills no registrados
+npx knowledge-manager status        # Mostrar estado de instalación
+npx knowledge-manager reset         # Resetear toda la configuración
+npx knowledge-manager --help        # Ver todos los comandos
 ```
 
 ## Licencia

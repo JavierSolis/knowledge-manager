@@ -48,7 +48,7 @@ export async function initCommand(): Promise<void> {
         console.log(`    - ${p}`);
       }
     }
-    console.log(warning("Corrige los duplicados en tu repositorio y ejecuta 'skill-manager rescan'."));
+    console.log(warning("Corrige los duplicados en tu repositorio y ejecuta 'knowledge-manager rescan'."));
     console.log("");
   }
 
@@ -74,8 +74,8 @@ export async function initCommand(): Promise<void> {
   const initLines = [
     success(`Repositorio escaneado: ${skills.length} skills encontrados`),
     success(`AI Client: ${aiClient}`),
-    info("Usá 'skill-manager search' para buscar skills"),
-    info("Usá 'skill-manager install' para instalar"),
+    info("Usá 'knowledge-manager search' para buscar skills"),
+    info("Usá 'knowledge-manager install' para instalar"),
   ];
   if (installedCount > 0) {
     initLines.push(info(`${installedCount} skills detectados como instalados`));
@@ -86,7 +86,7 @@ export async function initCommand(): Promise<void> {
 export async function reinitCommand(): Promise<void> {
   const config = loadConfig();
   if (!config) {
-    console.log(warning("No hay configuración previa. Ejecutá 'skill-manager init' primero."));
+    console.log(warning("No hay configuración previa. Ejecutá 'knowledge-manager init' primero."));
     return;
   }
 
@@ -109,7 +109,7 @@ export async function reinitCommand(): Promise<void> {
         console.log(`    - ${p}`);
       }
     }
-    console.log(warning("Corrige los duplicados en tu repositorio y ejecuta 'skill-manager rescan' de nuevo."));
+    console.log(warning("Corrige los duplicados en tu repositorio y ejecuta 'knowledge-manager rescan' de nuevo."));
     console.log("");
   }
 

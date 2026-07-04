@@ -1,8 +1,8 @@
 ---
-name: skill-manager-cli
+name: knowledge-manager-cli
 description: >
-  Skill Manager CLI — scanner, search UI, and install flow conventions.
-  Trigger: When working on skill-manager code, search UI, scanner, prompts, or install flow.
+  Knowledge Manager CLI — scanner, search UI, and install flow conventions.
+  Trigger: When working on knowledge-manager code, search UI, scanner, prompts, or install flow.
 license: Apache-2.0
 metadata:
   author: gentleman-programming
@@ -178,7 +178,7 @@ npx vitest run
 - **gentle-ai repo**: https://github.com/Gentleman-Programming/gentle-ai
   - `internal/tui/screens/common.go` — checkbox/radio rendering
   - `internal/tui/styles/styles.go` — style constants
-- **Skill-manager source**:
+- **Knowledge-manager source**:
   - `src/core/scanner.ts` — scanner logic (needs collection_skills fix)
   - `src/ui/prompts.ts` — interactive prompts (needs spacing fix)
   - `src/commands/search.ts` — search flow
