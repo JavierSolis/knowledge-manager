@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skill Manager — Instala AI Skills desde tu repositorio local</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Skill Manager</h1>
+      <p class="subtitle">CLI interactivo para instalar <strong>AI agent skills</strong> desde un repositorio local hacia tu proyecto</p>
+      <div class="cta-group">
+        <code class="install-command">npx skill-manager init</code>
+        <div class="buttons">
+          <a href="https://github.com/JavierSolis/skill-manager" class="btn btn-primary" target="_blank">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="/docs/instalar" class="btn btn-secondary">Documentación</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="features">
+      <div class="container">
+        <h2>¿Por qué Skill Manager?</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>🚀 Repositorio Local</h3>
+            <p>Tus skills, tu control. El repositorio es una carpeta local en tu máquina, no un registry centralizado.</p>
+          </article>
+          <article class="card">
+            <h3>⚡ Búsqueda FTS5</h3>
+            <p>Indexación full-text con SQLite FTS5. Búsqueda rápida por nombre, categoría, tags y descripción.</p>
+          </article>
+          <article class="card">
+            <h3>🔒 Seguridad</h3>
+            <p>Verificación SHA-256 de cada skill instalado. Lock file para tracking de versiones y hashes.</p>
+          </article>
+          <article class="card">
+            <h3>🤖 Multi AI Client</h3>
+            <p>Soporte para Claude, Gemini CLI y más desde el arranque. La ruta de instalación se adapta al AI client.</p>
+          </article>
+          <article class="card">
+            <h3>📦 npm</h3>
+            <p>Un solo comando: <code>npx skill-manager</code>. Sin instalación global, sin configuraciones complejas.</p>
+          </article>
+          <article class="card">
+            <h3>🔄 Actualizaciones Seguras</h3>
+            <p>Detección de cambios por hash/version, backup automático, y nunca chanca sin confirmación.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-it-works">
+      <div class="container">
+        <h2>¿Cómo funciona?</h2>
+        <div class="steps">
+          <div class="step">
+            <span class="step-number">1</span>
+            <h3>Configurá tu repositorio</h3>
+            <p>Apuntá a tu carpeta de skills con <code>skill-manager init</code></p>
+          </div>
+          <div class="step">
+            <span class="step-number">2</span>
+            <h3>Buscá skills</h3>
+            <p>Usá FTS5 para encontrar lo que necesitás</p>
+          </div>
+          <div class="step">
+            <span class="step-number">3</span>
+            <h3>Instalá con un click</h3>
+            <p>Seleccioná y confirmá — los archivos se copian automáticamente</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <h2>Empezá ahora</h2>
+        <code class="install-command">npx skill-manager init</code>
+        <p class="cta-note">Sin registro, sin cloud, sin vueltas.</p>
+        <div class="buttons">
+          <a href="https://github.com/JavierSolis/skill-manager" class="btn btn-primary" target="_blank">
+            ⭐ Star en GitHub
+          </a>
+          <a href="https://github.com/sponsors/JavierSolis" class="btn btn-sponsor" target="_blank">
+            ❤️ Sponsor
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Skill Manager — MIT License</p>
+    </div>
+  </footer>
+</body>
+</html>

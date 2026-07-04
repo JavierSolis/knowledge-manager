@@ -1,0 +1,22 @@
+{
+  "version": "1",
+  "skills": [
+    {
+      "skill_id": 16,
+      "name": "env-config",
+      "category": "skills",
+      "version": "1.0.0",
+      "hash": "ea36ec4afec1f4078d11bfb01dbc77a2137387b1374bfa7ae0e9c3717039d750",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "hash": "ea36ec4afec1f4078d11bfb01dbc77a2137387b1374bfa7ae0e9c3717039d750"
+        }
+      ],
+      "destination": "/Users/javiersolisflores/Documents/proyectos/skill_manager/.claude/skills/env-config",
+      "mode": "local",
+      "installed_at": "2026-07-03T23:55:55.138Z"
+    }
+  ],
+  "updated_at": "2026-07-03T23:55:55.141Z"
+}
