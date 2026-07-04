@@ -25,7 +25,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+          static_site_generator: disable
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
