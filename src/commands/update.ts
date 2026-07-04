@@ -60,7 +60,7 @@ export async function updateCommand(options: UpdateCommandOptions = {}): Promise
   }
 
   const selected = await checkboxQuestion(
-    "¿Qué skills querés actualizar?",
+    "¿Qué skills quieres actualizar?",
     updatable.map((d) => ({
       name: `${d.category}/${d.name}  v${d.installedVersion} → v${d.repoVersion}`,
       value: d.skillId,

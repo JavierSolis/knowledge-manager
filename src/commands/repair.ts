@@ -142,7 +142,7 @@ export async function repairCommand(): Promise<void> {
   }
   console.log("");
 
-  const selected = await checkboxQuestion("¿Qué skills querés reparar?", corrupted.map((c) => ({ name: c.name, value: c.skillId, checked: true })));
+  const selected = await checkboxQuestion("¿Qué skills quieres reparar?", corrupted.map((c) => ({ name: c.name, value: c.skillId, checked: true })));
   if (selected.length === 0) { console.log(info("No se seleccionaron skills.")); return; }
 
   const confirmed = await confirmQuestion(`¿Re-instalar ${selected.length} skills?`);

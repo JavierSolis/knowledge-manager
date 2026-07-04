@@ -102,7 +102,7 @@ export async function searchCommand(): Promise<void> {
       if (selection.action === "search") break;
 
       if (selection.selected.length === 0) {
-        const action = await keySelect("¿Qué querés hacer?", [
+        const action = await keySelect("¿Qué quieres hacer?", [
           { key: "s", label: "nueva búsqueda", value: "search" },
           { key: "q", label: "salir", value: "quit" },
         ]);
@@ -122,7 +122,7 @@ export async function searchCommand(): Promise<void> {
 
       if (!confirmed) {
         console.log(warning("Instalación cancelada."));
-        const action = await keySelect("¿Qué querés hacer?", [
+        const action = await keySelect("¿Qué quieres hacer?", [
           { key: "s", label: "nueva búsqueda", value: "search" },
           { key: "q", label: "salir", value: "quit" },
         ]);
@@ -155,7 +155,7 @@ export async function searchCommand(): Promise<void> {
       console.log("");
       showDoneBox(installResults, mode, analysis.destinationPath);
 
-      const done = await keySelect("¿Qué querés hacer ahora?", [
+      const done = await keySelect("¿Qué quieres hacer ahora?", [
         { key: "s", label: "nueva búsqueda", value: "search" },
         { key: "q", label: "salir", value: "quit" },
       ]);
@@ -167,7 +167,7 @@ export async function searchCommand(): Promise<void> {
     if (results.length === 0) {
       console.log("");
       console.log(info(`Sin resultados para "${query}".`));
-      const action = await keySelect("¿Qué querés hacer?", [
+      const action = await keySelect("¿Qué quieres hacer?", [
         { key: "s", label: "nueva búsqueda", value: "search" },
         { key: "q", label: "salir", value: "quit" },
       ]);

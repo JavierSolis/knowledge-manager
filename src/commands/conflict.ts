@@ -110,7 +110,7 @@ export async function conflictCommand(): Promise<void> {
   for (const c of nameConflicts) {
     console.log(`  ${yellow("⚠")} ${c.dirName} — mismo nombre, contenido diferente`);
     while (true) {
-      const action = await keySelect("¿Qué querés hacer?", [
+      const action = await keySelect("¿Qué quieres hacer?", [
         { key: "d", label: "ver diff", value: "diff" },
         { key: "s", label: "sobrescribir con versión del repositorio", value: "sync" },
         { key: "k", label: "saltar", value: "skip" },
@@ -149,7 +149,7 @@ export async function conflictCommand(): Promise<void> {
   for (const c of hashConflicts) {
     console.log(`  ${yellow("⚠")} ${c.dirName} → coincide con '${c.dbSkill!.name}' del repositorio`);
     while (true) {
-      const action = await keySelect("¿Qué querés hacer?", [
+      const action = await keySelect("¿Qué quieres hacer?", [
         { key: "d", label: "ver diff", value: "diff" },
         { key: "s", label: "sincronizar con versión del repositorio", value: "sync" },
         { key: "k", label: "saltar", value: "skip" },

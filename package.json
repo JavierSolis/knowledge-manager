@@ -15,6 +15,16 @@
   "bugs": {
     "url": "https://github.com/JavierSolis/skill-manager/issues"
   },
+  "files": [
+    "dist/",
+    "bin/",
+    "src/",
+    "landing/",
+    "README.md",
+    "README-en.md",
+    "LICENSE",
+    "package.json"
+  ],
   "keywords": [
     "ai",
     "skills",

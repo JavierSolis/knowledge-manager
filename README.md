@@ -1,14 +1,31 @@
-[🇪🇸 Español](#español) · [🇬🇧 English](#english)
+[🇪🇸 Español](#español) · [🇬🇧 English](README-en.md)
 
 ---
 
-# 🇪🇸 Español
-
 # Skill Manager
 
-CLI interactivo para instalar **AI agent skills** desde un repositorio local hacia tu proyecto.
+Herramientas como [autoskills](https://github.com/midudev/autoskills) usan un registry centralizado: no controlas versiones, no compartes skills con tu equipo, no tienes skills privadas. **Skill Manager** funciona como un gestor de paquetes para skills: tu repositorio Git es tu registry. Versionas, tu equipo alimenta el catálogo, y todos instalan desde ahí — sea un repo público, privado, o varios. Lo mismo que npm/pip pero con skills de IA.
 
-Inspirado en [autoskills](https://github.com/midudev/autoskills) pero con un modelo distinto: el repositorio de skills es una carpeta local (no un registry centralizado), y la herramienta cachea los skills en una base SQLite + FTS5 para búsqueda y selección rápida.
+## Prerrequisitos
+
+Necesitas un repositorio de skills con la estructura válida. El repositorio puede ser cualquier carpeta local que contenga:
+
+```
+<mi-repo>/
+├── catalog/
+│   └── skill/
+│       ├── mi-skill/
+│       │   ├── SKILL.md
+│       │   └── ...
+│       └── otro-skill/
+│           └── ...
+```
+
+La carpeta raíz (ej: `~/proyectos/mi-repo`) es tu "repositorio". Dentro de `catalog/skill/` van las skills, cada una en su propia subcarpeta.
+
+> ⚠️ **Importante**: cuando la herramienta te pida la ruta del repositorio, ingresa la **raíz** (ej: `~/proyectos/mi-repo`), **no** la subcarpeta `catalog/skill/`.
+
+Tienes un ejemplo funcional en [ejemplo-skills/](./ejemplo-skills) para ver la estructura y probar.
 
 ## Quick Start
 
@@ -18,7 +35,7 @@ npx skill-manager
 
 Un solo comando. Si es tu primera vez, configura el repositorio automáticamente y abre la búsqueda interactiva. Si ya lo usaste antes, va directo a buscar e instalar skills.
 
-También podés usar el alias corto:
+También puedes usar el alias corto:
 
 ```bash
 npx skm
@@ -33,14 +50,14 @@ npx skm
 
 ## Stack
 
-| Capa | Tecnología |
-|------|-----------|
-| Runtime | Node.js >= 22 |
-| Lenguaje | TypeScript 5.x |
-| CLI | Commander + TUI raw mode + chalk |
-| DB | SQLite + FTS5 (sql.js) |
-| Build | tsup |
-| Tests | vitest |
+| Capa     | Tecnología                       |
+| -------- | -------------------------------- |
+| Runtime  | Node.js >= 22                    |
+| Lenguaje | TypeScript 5.x                   |
+| CLI      | Commander + TUI raw mode + chalk |
+| DB       | SQLite + FTS5 (sql.js)           |
+| Build    | tsup                             |
+| Tests    | vitest                           |
 
 ## Referencia de comandos
 
@@ -66,64 +83,16 @@ MIT
 
 ---
 
-# 🇬🇧 English
+# Contact
 
-# Skill Manager
+<div align="center">
+    
+   <img src="docs/images/contact_img.png" width="90" align="center" alt="gato"/>
 
-Interactive CLI to install **AI agent skills** from a local repository into your project.
+#### Javier Solis
 
-Inspired by [autoskills](https://github.com/midudev/autoskills) but with a different model: the skill repository is a local folder (not a centralized registry), and the tool caches skills in a SQLite + FTS5 database for fast search and selection.
+👓 https://www.linkedin.com/in/android-developer-peru/
 
-## Quick Start
+💼 https://www.behance.net/JavierJSolis
 
-```bash
-npx skill-manager
-```
-
-One command. First run auto-configures the repository and opens the interactive search. Subsequent runs go directly to searching and installing skills.
-
-You can also use the short alias:
-
-```bash
-npx skm
-```
-
-## How it works
-
-1. Scans your local skills folder
-2. Indexes them in SQLite with FTS5 search
-3. Opens an interactive TUI to browse and select
-4. Installs selected skills with SHA-256 verification
-
-## Stack
-
-| Layer | Technology |
-|-------|-----------|
-| Runtime | Node.js >= 22 |
-| Language | TypeScript 5.x |
-| CLI | Commander + TUI raw mode + chalk |
-| DB | SQLite + FTS5 (sql.js) |
-| Build | tsup |
-| Tests | vitest |
-
-## Command reference
-
-```bash
-npx skill-manager init          # Configure repo and AI client
-npx skill-manager search        # Search and install skills (TUI)
-npx skill-manager install       # Same as search (alias)
-npx skill-manager list          # List installed skills
-npx skill-manager update        # Update installed skills
-npx skill-manager rescan        # Re-scan repository
-npx skill-manager verify        # Verify integrity
-npx skill-manager repair        # Re-install corrupted skills
-npx skill-manager conflict      # Detect and resolve conflicts
-npx skill-manager steal         # Extract unregistered skills
-npx skill-manager status        # Show installation status
-npx skill-manager reset         # Reset all configuration
-npx skill-manager --help        # Show all commands
-```
-
-## License
-
-MIT
+</div>
