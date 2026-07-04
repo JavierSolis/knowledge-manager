@@ -11,6 +11,7 @@ import { updateCommand } from "./commands/update.js";
 import { rescanCommand } from "./commands/rescan.js";
 import { resetCommand } from "./commands/reset.js";
 import { statusCommand } from "./commands/status.js";
+import { showHero } from "./ui/display.js";
 import { info, success, error } from "./ui/colors.js";
 
 const program = new Command();
@@ -161,4 +162,41 @@ program
     await stealCommand();
   });
 
-program.parse(process.argv);
+// ── Smart entry point ──────────────────────────────────────────
+(async () => {
+  const args = process.argv.slice(2);
+
+  if (args.length === 0) {
+    await initDatabase();
+    let config = loadConfig();
+
+    const version = "1.0.0";
+
+    if (!config) {
+      showHero(version);
+      await initCommand();
+      config = loadConfig();
+      console.log("");
+    }
+
+    showHero(version);
+
+    const repoInfo = getSkillRepositoryInfo();
+    if (repoInfo) {
+      console.log(success(`Repositorio: ${repoInfo.path} (${getSkillCount()} skills)`));
+    }
+    if (config) {
+      console.log(success(`AI Client: ${config.aiClient}`));
+    }
+    console.log("");
+
+    try {
+      await searchCommand();
+    } catch (e) {
+      console.log(error(`Error: ${(e as Error).message}`));
+      console.log(info("Probá con 'skill-manager rescan' primero."));
+    }
+  } else {
+    program.parse(process.argv);
+  }
+})();

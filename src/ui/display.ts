@@ -3,6 +3,21 @@ import Table from "cli-table3";
 import { success, error as err, warning, info, highlight, dim, successBold, cyan, bold } from "./colors.js";
 import type { SearchResult, InstalledSkill } from "../types/skill.js";
 
+export function showHero(version: string = "1.0.0"): void {
+  console.log(
+    boxen(
+      `${bold("SKILL MANAGER")} ${dim(`v${version}`)}\n${dim("Instalá AI skills desde tu repositorio local")}`,
+      {
+        padding: { top: 0, bottom: 0, left: 2, right: 2 },
+        margin: 0,
+        borderColor: "cyan",
+        borderStyle: "double",
+        textAlignment: "center",
+      }
+    )
+  );
+}
+
 export interface SkillAnalysis {
   id: number;
   name: string;
