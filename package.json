@@ -4,8 +4,8 @@
   "description": "CLI para instalar AI agent skills desde un repositorio local de conocimiento",
   "type": "module",
   "bin": {
-    "knowledge-manager": "./bin/knowledge-manager.js",
-    "km": "./bin/knowledge-manager.js"
+    "knowledge-manager": "bin/knowledge-manager.js",
+    "km": "bin/knowledge-manager.js"
   },
   "repository": {
     "type": "git",
